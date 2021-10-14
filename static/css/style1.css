@@ -1,0 +1,55 @@
+*
+#selogan
+{
+    padding:60px;
+}
+.container {
+    margin: auto;
+}
+
+#enerSYS
+{
+    padding:50px
+}
+.gambarenerSYS {
+    width: 500px;
+    margin-left:-50px
+}
+
+.button
+{
+    border : none;
+    border-radius:20px;
+    padding: 8px 25px;
+    background-color: gold;
+    
+}
+#ourprograms {
+    padding: 30px;
+}
+.titleourprograms::before{
+    content:"";
+    background: gold;
+    height: 3px;
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+    
+    display:block;
+    transform: translateY(63px);
+}
+#ourproducts
+{
+    padding: 100px;
+}
+.tittle2::before {
+
+    content: "";
+    background: gold;
+    height: 3px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}

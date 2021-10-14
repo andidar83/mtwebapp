@@ -1,0 +1,82 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>INVERSE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+<body style="padding-top: 70px;">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">1D Inversion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <h1 style="text-align: center">Welcome to Inversion Tool</h1>
+    <div style="background-color: white; padding: 10px;">
+        <article style="box-shadow: 0 4px 8px 0;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px 450px 20px 450px;
+        background-color: dimgray;">
+            <h2 class="text-white" style="text-align: center; color: azure;">Input Parameters</h2>
+            <h5 class="text-white" style="text-align: left; color: azure;">Input EDI file</h5>
+            <form method="post" enctype="multipart/form-data">
+                {%csrf_token%}
+                <input type="file" name="document" />
+                <button type="submit">Upload file</button>
+            </form>
+
+            <form action="add" class="text-white" style="align-self:center">
+
+                Comonent (ZXYR/ZYXR)     : <input type="text" name="var1"><br>
+                <h5 class="text-white" style="text-align: left; color: azure;">Input Starting Model</h5>
+                <pre>Resistivity &#9;: <input type="text" name="var2"><br></pre>
+                <pre>Thic increment &#9;: <input type="number" name="var3"><br></pre>
+                <input type="checkbox" id="vehicle1" name="Bostick" value="Bike">
+                <label for="Bostick"> Bostick Transform</label><br>
+
+
+                <h5 class="text-white" style="text-align: left; color: azure;">Other Parameters</h5>
+                <pre>Iteration  &#9;: <input type="number" name="var4"><br></pre>
+                <pre>Pmarup       &#9;: <input type="number" name="var5"><br></pre>
+                <pre>Pmarlow       &#9;: <input type="number" name="var6"><br></pre>
+                <pre>Target Depth &#9;: <input type="number" name="var7"><br></pre>
+
+
+                <h5 class="text-white" style="text-align: left; color: azure;">Smoothing</h5>
+                <input type="checkbox" id="vehicle1" name="Moving Average" value="Bike">
+                <pre>Window       &#9;: <input type="number" name="var8"><br></pre>
+                <input type="submit">
+            </form>
+
+        </article>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <footer class="page-footer font-small blue bg-dark" style="color: white; padding-top: 10px;">
+        <div class="footer-copyright text-center py-3">
+            <p>Copyright ©Andi Darmawan 2021</p>
+        </div>
+    </footer>
+
+</body>
+</html>
