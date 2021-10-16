@@ -14,7 +14,7 @@ from django.core.files.storage import FileSystemStorage
 import scipy.interpolate as inter
 from scipy.signal import convolve2d
 
-import cv2
+
 import glob
 import math
 import cmath
