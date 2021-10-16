@@ -25,7 +25,7 @@ SECRET_KEY = 'e+m!d%lo9to+rixu*h!n0blgdx0is5$^hy&$%d0!t!13av*6x5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://mtwebapp.herokuapp.com/','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
