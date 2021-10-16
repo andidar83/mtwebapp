@@ -58,19 +58,6 @@
          class="carousel slide carousel-fade carousel-light"
          data-mdb-ride="carousel">
         <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button data-mdb-target="#carouselDarkVariant"
-                    data-mdb-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"></button>
-            <button data-mdb-target="#carouselDarkVariant"
-                    data-mdb-slide-to="1"
-                    aria-label="Slide 1"></button>
-            <button data-mdb-target="#carouselDarkVariant"
-                    data-mdb-slide-to="2"
-                    aria-label="Slide 1"></button>
-        </div>
 
         <!-- Inner -->
         <div class="carousel-inner">
@@ -79,17 +66,19 @@
             <div class="carousel-item active">
                 
                 <div style="background-image: url('/static/img/MTBG.jpg');
-                     height:595px;background-attachment:'fixed';"
+        background-size: cover;
+        height: 500px;
+        background-attachment: fixed;
+"
                      class="d-block w-100"
                      alt="..." />
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block" >
                     <img width="100px" src="static/img/Makara_UI.png" alt="" />
                     <h5>Welcome to our website</h5>
                     <p>This website aims to provide easy acces to forward modeling and inversion tool of 1D magnetotelluric data</p>
                     <a href="#"><button type="button" class="btn btn-dark btn-rounded">Dark</button></a>
                 </div>
             </div>
-
             <!-- Single item -->
 
 
@@ -98,20 +87,7 @@
         </div>
         <!-- Inner -->
         <!-- Controls -->
-        <button class="carousel-control-prev"
-                type="button"
-                data-mdb-target="#carouselDarkVariant"
-                data-mdb-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next"
-                type="button"
-                data-mdb-target="#carouselDarkVariant"
-                data-mdb-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
     </div>
     <!-- Carousel wrapper -->
     <div class="container" style="margin:30px auto;">
@@ -121,7 +97,7 @@
 
 
     
-    <section id="selogan">
+    <section>
         <div class="container">
             <h4>Get to know us</h4>
 
@@ -145,10 +121,10 @@
 
             <div class="row" style="margin-top:100px;">
 
-                <div class="col-4">
+                <div class="col-md-4">
                     <img src="/static/img/enerSYS.png" width="350px" alt="Alternate Text" class="gambarenerSYS" />
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                     <h1>Find out more !</h1>
                     <p>
                         Learn more about the forward modeling and inversion algorithm
@@ -323,7 +299,7 @@
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2020 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">Andi Darmawan</a>
+            <a class="text-white" href="#!">Andi Darmawan</a>
         </div>
         <!-- Copyright -->
     </footer>
